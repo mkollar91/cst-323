@@ -1,0 +1,61 @@
+# Docs/helpers
+HELP.md
+
+# ===== Build outputs =====
+target/
+!**/src/main/**/target/
+!**/src/test/**/target/
+
+# JARs (keep Maven wrapper jar so anyone can build)
+*.jar
+!.mvn/wrapper/maven-wrapper.jar
+
+# ===== Logs =====
+*.log
+logs/
+**/logs/
+
+# ===== OS junk =====
+.DS_Store
+Thumbs.db
+
+# ===== STS / Eclipse =====
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+# ===== IntelliJ IDEA =====
+.idea
+*.iws
+*.iml
+*.ipr
+
+# ===== NetBeans =====
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+build/
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+# ===== VS Code =====
+.vscode/
+
+# ===== Local configs & secrets =====
+# Keep real creds out of Git; commit a sample file instead.
+src/main/resources/application.properties
+src/main/resources/*-local.properties
+src/main/resources/*.secrets.properties
+.env
+*.env
+*.key
+*.pem
+*.p12
+*.jks
+*.keystore
